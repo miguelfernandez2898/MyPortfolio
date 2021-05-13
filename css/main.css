@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+
+    font-family: 'Montserrat';
+}
+
+img {
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+    background: #1c1d2d;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0 20px 16px -6px #777;
+    -moz-box-shadow: 0 20px 16px -6px #777;
+    box-shadow: 0 20px 16px -6px #777;
+    transition: 0.4s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid #1c1d2d;
+    color: #1c1d2d !important;
+    transition: 0.4s ease-in-out;
+}
+
+/* FadeInUp Effect */
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.one {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.two {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+.four {
+-webkit-animation-delay: 2.3s;
+-moz-animation-delay: 2.3s;
+animation-delay: 2.3s;
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+/* Navbar */
+
+.navbar {
+    padding: 10px;
+    background-color: #14151e !important;
+}
+
+.navbar .container-fluid {
+    padding: 10px 70px;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-left: 60px;
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+/* Sidebar Social Links */
+
+.social {
+    position: fixed;
+    top: 30%;
+    z-index: 1000;
+}
+
+.social ul {
+    list-style-type: none;
+    padding: 0;
+    transform: translatex(-270px);
+}
+
+.social ul li {
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+.social ul li:hover {
+    transform: translatex(110px);
+}
+
+.social ul li.facebook {
+    background-color: #3b5999;
+}
+
+.social ul li a .fa-facebook {
+    background-color: #3b5999;
+    color: white;
+}
+
+.social ul li.instagram {
+    background-color: #e4405f;
+}
+
+.social ul li.github {
+    background-color: black;
+}
+
+.social ul li a .fa-github {
+    color: white;
+    background-color: black;
+}
+
+.social ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social ul li i {
+    text-align: center;
+    margin-left: 14px;
+    color: black;
+    background-color: white;
+
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+}
+
+.social ul li i.fa-instagram {
+    border-radius: 35%;
+}
+
+.social ul li:hover i {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+/* First Section */
+
+#homepage .first-section {
+    padding: 100px 0px;
+    color: white;
+    background-color: #14151e;
+}
+
+#homepage .first-section .text-section {
+    margin: 160px 0px 20px 20px;
+    ;
+}
+
+#homepage .first-section .img-section {
+    padding: 0px 50px 110px 150px;
+}
+
+#homepage .first-section .img-section img {
+    border-radius: 15px;
+    box-shadow: 40px 40px 16px -6px rgba(0, 0, 0, 0.9);
+}
+
+/* Featured Project Section */
+
+#homepage .featured-project-section {
+    margin: 160px;
+}
+
+#homepage .featured-project-section .featured-project {
+    margin-top: 30px;
+}
+
+#homepage .featured-project-section .featured-project .img-section img {
+    box-shadow: 0 0 30px black;
+}
+
+#homepage .featured-project-section .featured-project .text-section h3 {
+    text-align: center;
+}
+
+#homepage .featured-project-section .featured-project .text-section p {
+    margin: 30px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.8);
+    word-spacing: 2px;
+}
+
+#homepage .featured-project-section .featured-project .text-section .work-info {
+    font-weight: 500;
+}
+
+
+#homepage .featured-project-section .featured-project .text-section .work-info .btn {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/* recent-project-section */
+
+#homepage .recent-project-section {
+    margin: 160px;
+    margin-top: 200px;
+}
+
+#homepage .recent-project-section .rps-heading {
+    margin-bottom: 40px;
+}
+
+#homepage .recent-project-section .rps-body {
+    background-color: #1c1d2d;
+    border-radius: 20px;
+    padding: 50px 50px 30px 50px;
+}
+
+#homepage .recent-project-section .rps-body .card {
+    margin-bottom: 20px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px black;
+    background: none;
+    border-radius: 20px;
+}
+
+#homepage .recent-project-section .rps-body .card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    box-shadow: 20px 20px 16px -6px rgba(0, 0, 0, 0.9);
+}
+
+#homepage .recent-project-section .rps-body .card .card-img-top {
+    border-radius: 10px;
+}
+
+/* Skill Section */
+
+#homepage .service-section {
+    margin: 160px;
+    margin-top: 200px;
+}
+
+#homepage .service-section .ss-body {
+    margin-top: 30px;
+}
+
+#homepage .service-section .ss-body .card {
+    background-color: whitesmoke;
+    border: none !important;
+    border-top: 15px solid #1c1d2d !important;
+    border-radius: 10px;
+
+}
+
+#homepage .service-section .ss-body .card img {
+    margin-top: 100px;
+}
+
+#homepage .service-section .ss-body .card img#pen {
+    transform: rotate(135deg);
+}
+
+#homepage .service-section .ss-body .card .card-body {
+    padding: 100px;
+    text-align: center;
+}
+
+#homepage .service-section .ss-body .card .card-body .card-title {
+    font-weight: bold;
+}
+
+#homepage .service-section .ss-body .card .card-body .card-sub-title {
+    margin-top: 20px;
+}
+
+#homepage .service-section .ss-body .card .card-body .card-text {
+    margin-top: 20px;
+}
+
+#homepage .service-section .ss-footer {
+    margin-top: 40px;
+}
+
+/* Blog Section */
+
+#homepage .blog-section {
+    margin: 160px;
+    margin-top: 200px;
+}
+
+#homepage .blog-section .bs-body .card {
+    background-color: whitesmoke;
+    border: none;
+}
+
+#homepage .blog-section .bs-body .card .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+#homepage .blog-section .bs-body .card .card-body {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#homepage .blog-section .bs-body .card .card-body .card-text {
+    margin: 30px 10px;
+}
+
+#homepage .blog-section .bs-body .card .card-footer {
+    border: none;
+    background-color: whitesmoke;
+}
+
+#homepage .blog-section .bs-footer {
+    margin-top: 40px
+}
+
+/* Footer Section */
+
+#footer {
+    background-color: #14151e;
+    color: white;
+    padding-top: 20px;
+}
+
+.footer-contact {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-contact .footer-btn {
+    box-shadow: none;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.footer-contact .footer-btn:hover {
+    color: black !important;
+    background-color: whitesmoke;
+}
+
+/* project-page */
+
+#project-page main {
+    margin: 100px 160px;
+    padding-bottom: 400px;
+}
+
+#project-page main .main-body .card-deck .card {
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#project-page main .main-body .card-deck .card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Services Page */
+
+#services main {
+    margin: 100px 160px;
+}
+
+#services main .main-heading {
+    text-align: center;
+}
+
+#services main .main-body .card-deck {
+    margin-top: 30px;
+}
+
+#services main .main-body .card-deck .card {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    border-top: 15px solid #1c1d2d !important;
+}
+
+#services main .main-body .card-deck .card img {
+    margin-top: 50px;
+}
+
+#services main .main-body .card-deck .card img#pen {
+    transform: rotate(135deg);
+}
+
+#services main .main-body .card-deck .card .card-body {
+    margin-top: 40px;
+}
+
+#services main .main-body .card-deck .card .card-title {
+    text-align: center;
+}
+
+#services main .main-body .card-deck .card .card-body .card-sub-section {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+#services main .main-body .card-deck .card .card-body .card-sub-section > * {
+    margin: 20px;
+}
+
+/* Contact Page */
+
+#contact-page main {
+    margin: 100px 200px;
+}
+
+#contact-page main .main-heading {
+    text-align: center;
+}
+
+#contact-page main .main-body .contact-section {
+    margin-top: 100px;
+}
+
+/* Blog Page */
+
+#blog-page main {
+    margin: 100px 160px;
+}
+
+#blog-page main .main-heading {
+    text-align: center;
+}
+
+#blog-page main .main-body .blog-section {
+    margin-top: 100px;
+}
+
+#blog-page main .main-body .blog-section .card-deck .card {
+    background-color: whitesmoke;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#blog-page main .main-body .blog-section .card-deck .card .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+#blog-page main .main-body .blog-section .card-deck .card .card-body {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#blog-page main .main-body .blog-section .card-deck .card .card-body .card-text {
+    margin: 30px 10px;
+}
+
+#blog-page main .main-body .blog-section .card-deck .card .card-footer {
+    border: none;
+    background-color: whitesmoke;
+}
+
+#blog-page main .main-body .blog-section .card-deck > * {
+    transition: 0.3s ease-in-out;
+}
+
+#blog-page main .main-body .blog-section .card-deck:hover > * {
+    opacity: 0.4;
+    transition: 0.3s ease-in-out;
+}
+
+#blog-page main .main-body .blog-section .card-deck:hover > *:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
