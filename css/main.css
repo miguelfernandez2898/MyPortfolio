@@ -381,6 +381,8 @@ animation-delay: 2.3s;
 #homepage .blog-section {
     margin: 160px;
     margin-top: 200px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 
 #homepage .blog-section .bs-body .card {
